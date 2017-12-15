@@ -28,7 +28,7 @@ nav{
 }
 .topnav a{
 	margin: 0 30px;
-	z-index: 0;
+	/*z-index: 0;*/
 	position: relative;
 }
 .logo {
