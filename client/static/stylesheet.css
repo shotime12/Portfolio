@@ -280,6 +280,11 @@ img {
 	.icon{
 		display: block;
 		font-size: 30px;
+		padding-right: 21px;
+	}
+	.icon:hover{
+		color: white !important;
+		background-color: transparent !important;
 	}
 	.repsonsive{
 		/*width: 100%;*/
