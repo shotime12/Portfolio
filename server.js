@@ -12,6 +12,9 @@ app.use(express.static(path.join(root, 'node_modules')))
 
 //require('./server/config/routes.js')(app)
 
-app.listen(8000, function(){
+//set port
+var port = process.env.PORT || 8000;
+
+app.listen(port, function(){
 	console.log('listening in port 8000')
 })
