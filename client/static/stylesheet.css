@@ -213,7 +213,7 @@ img {
 .small_media{
 	display: none;
 }
-@media screen and (max-width: 775px) and (min-width: 656px){
+@media screen and (max-width: 775px) and (min-width: 668px){
 	
 	.main_img_container{
 		height: 400px;
@@ -260,7 +260,7 @@ img {
 		transform: translateY(0px);
 	}
 }
-@media(max-width: 655px){
+@media(max-width: 667px){
 	/****************************************
 	
 	Nav Bar Styling
