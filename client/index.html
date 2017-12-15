@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src = '/angular/angular.js'></script>
+	<script src = '/config/app.js'></script>
+	<link rel= 'stylesheet' href = 'static/stylesheet.css'>
+</head>
+<body>
+
+	<header>
+		<!-- <h4 class = "logo">SK</h4> -->
+		<!-- <nav id = "myTopnav" class = "topnav">
+			<a href = "javascript:void(0);" class = "icon" onclick = "navbar()">&#9776</a>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+		</nav -->
+	</header>
+
+	<div class = "main_img_container">
+		
+		<div class = 'big_media'>
+			<!-- This is only shown above 440px -->
+			<p class = 'info'>It's time to create your dream website.</p>
+			<span class="helper"></span>
+			<img src = "../static/img/responsive.png">
+		</div>
+		<div class = 'small_media'>
+			<!-- This is only shown under 440px -->
+			<img src = "../static/img/responsive.png">
+			<p class = 'info'>It's time to create your dream website.</p>
+		</div>
+		<nav id = "myTopnav" class = "topnav">
+			<a href = "javascript:void(0);" class = "icon" onclick = "navbar()">&#9776</a>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+			
+			
+		</nav>
+
+		<!-- <img src = "..\img\sample_main.jpeg"> -->
+	</div>
+	<div class =  "about">
+		<p>I am a web-developer based off of Dallas, TX. I have expereience creating webpages in JavaScript, HTML, and CSS. I create designs using the Adobe Creative Cloud applications.</p>
+	</div>
+	<ul class = 'circle_ul'>
+		<li class = 'circle_list'>
+			<img src = "../static/img/web_design.jpeg">
+			<p>Web Design</p>
+		</li>
+		<li class = 'circle_list'>
+			<img src = "../static/img/photography.jpeg">
+			<p>Photography</p>
+		</li>
+		<li class = 'circle_list'>
+				<img src = "../static/img/photo_editing.jpg">
+			<p>Photo Editing</p>
+		</li>
+	</ul>
+	<div class = 'portfolio'>
+		<h5>Portfolio</h5>
+		<div class = 'project'>
+			<a target="_blank" href = "https://www.dukeunccasecomp.com/"><img src = "../static/img/Duke_UNC.jpg"></a>
+			<p>Duke/UNC Case Competion is annual competition for graduate students to showcase their critical thinking and problem solving skills. </p>
+			<p>Tools Used: HTML/CSS, JavaScript, Adobe Creative Cloud</p>
+		</div>
+		<div class = 'project'>
+			<img src = "../static/img/BrowBoutique.jpg">
+			<p>Brow Boutique is an eyebrow threading salon and spa in Fort Worth, TX. </p>
+			<p>Tools Used: HTML/CSS, AngularJS</p>
+		</div>
+	</div>
+	<div class = 'bottom'>
+<!-- 		<div class = 'social'>
+			<ul>
+				<li>Social</li>
+				<a href="https://github.com/shotime12" target="_blank"><li>Github</li></a>
+				<a href=https://www.linkedin.com/in/shovit-kandel-71361a69/ target="_blank"><li>LinkedIn</li></a>
+				<li>Twitter</li>
+			</ul>
+		</div> -->
+		<div class = 'social'>
+			<p>Social</p>
+			<a href="https://github.com/shotime12" target="_blank">Github</a>
+			<a href=https://www.linkedin.com/in/shovit-kandel-71361a69/ target="_blank">LinkedIn</li>
+			<a>Twitter</a>
+		</div>
+		<div class = 'contact'>
+			<div class="test">
+			<!-- <img src = "..\img\palm_tree.png"> -->
+				<p>Contact</p>
+				<p>shovit.kandel@gmail.com</p>
+				<p>(682) 365-5938</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <div class = "services" id='img1'>
+		<img src = "..\img\web_design.jpeg">
+	</div>
+	<div class = "services" id='img2'>
+		<img src = "..\img\photography.jpeg">
+	</div>
+	<div class = "services" id='img3'>
+		<img src = "..\img\photo_editing.jpg">
+	</div> -->
+
+	<script type="text/javascript">
+		function navbar(){
+			var x = document.getElementById("myTopnav")
+			if(x.className === "topnav"){
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+	
+
+</body>
+</html>
