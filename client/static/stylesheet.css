@@ -163,7 +163,7 @@ img {
 	color: white;
 }
 .social{
-	width: 49%;
+	width: 29%;
 	height: 100%;
 }
 .social p{
@@ -184,7 +184,7 @@ img {
 	width: 20%;
 }
 .contact{
-	width: 49%;
+	width: 70%;
 	height: 200px;
 	vertical-align: top;
 	text-align: center;
@@ -381,5 +381,22 @@ img {
 		width: 80%;
 		margin: 10px 0 0 0;
 		padding: 0 10%;
+	}
+/***************************************************
+			Bottom
+
+
+
+
+*****************************************************/
+	/*.contact{
+		width: 100%;
+		background-color: black;
+	}*/
+}
+@media(max-width: 395px){
+	.contact{
+		width: 100%;
+		background-color: black;
 	}
 }
