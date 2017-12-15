@@ -13,7 +13,6 @@ ul {
 }
 li {
 	list-style-type: none;
-	/*margin: 0 30px;*/
 	vertical-align: top;
 }
 a {
@@ -29,10 +28,11 @@ nav{
 }
 .topnav a{
 	margin: 0 30px;
+	z-index: 0;
+	position: relative;
 }
 .logo {
 	display: inline-block;
-	/*font-size: 24px;*/
 }
 
 .main_img_container {
@@ -41,7 +41,6 @@ nav{
 	background-image: url("./img/blue_background.jpeg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	/*white-space: nowrap;*/
 	color: white;
 	font-size: 3vw;
 }
@@ -102,7 +101,6 @@ img {
 	width: 100%;
 	height: 100%;
 	display: inline-block;
-	/*border-radius: 50%;*/
 	overflow: hidden;
 }
 .circle_ul{
@@ -113,7 +111,6 @@ img {
 	list-style-type: none;
 	width: 32%;
 	height: 200px;
-	/*padding: 0 5%;*/
 	margin: 25px 0px;
 	text-align: center;
 
@@ -127,8 +124,6 @@ img {
 .project{
 	width: 25%;
 	display: inline-block;
-	/*background-color: blue;*/
-	/*border: solid 1px black;*/
 	margin: 50px 10%;
 	vertical-align: top;
 	text-align: center;
@@ -148,9 +143,18 @@ img {
 
 .portfolio h5{
 	font-size: 32px;
-	margin: 80px 0 0px 0;
+	margin: 40px 0;
 	background-color: gray;
 	color: white;
+}
+.tools{
+	width: 100%;
+	height: 50px !important;
+	margin: 20px 0;
+}
+.tools img{
+	width: 50px;
+	height: 50px;
 }
 .bottom{
 	display: inline-block;
@@ -181,8 +185,6 @@ img {
 }
 .contact{
 	width: 49%;
-	/*background-color: blue;*/
-	/*border: solid black 1px;*/
 	height: 200px;
 	vertical-align: top;
 	text-align: center;
@@ -196,18 +198,19 @@ img {
 	vertical-align: top;
 }
 .contact p{
-	/*position: absolute;
-	top: 50%;
-	transform: translate(0, -50%); 	*/
 	width: 100%;
 }
-.test{
+.vertical_align{
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%); 
+	font-size: 20px;
 
 }
 .icon{
+	display: none;
+}
+.small_media{
 	display: none;
 }
 @media screen and (max-width: 775px) and (min-width: 656px){
@@ -219,16 +222,43 @@ img {
 		display: none;
 	}
 }
-@media(min-width: 775px){
-	.small_media{
+@media(min-width: 655px){
+	/*.small_media{
 		display: none;
-	}
+	}*/
 	/****************************************
 	
 	Nav Bar Styling
 
 	*****************************************/
-	
+	/*.topnav a:before, .topnav a:after{
+		height: 2px;
+		transition: all 0.3s;
+	}*/
+	.test a:before, 
+	.test a:after{
+	    position: absolute;
+	    left: 0px;
+	    width: 100%;
+	    height: 2px;
+	    background: #FFF;
+	    content: "";
+	    opacity: 0;
+	    transition: 0.3s;
+	}
+	.test a:before{
+		top: 0px;
+		transform: translateY(10px);
+	}
+	.test a:after{
+		bottom: 0px;
+		transform: translateY(-10px);
+	}
+	.test a:hover:before, 
+	.test a:hover:after{
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 @media(max-width: 655px){
 	/****************************************
@@ -242,13 +272,14 @@ img {
 	}
 	.topnav a:hover{
 		color: pink;
-		background-color: gray;
+		background-color: white;
 	}
 	.topnav a:not(:first-child){
 		display: none;
 	}
 	.icon{
 		display: block;
+		font-size: 30px;
 	}
 	.repsonsive{
 		/*width: 100%;*/
@@ -256,9 +287,15 @@ img {
 	.topnav.responsive{
 		position: relative;
 		width: 100%;
+		animation: mymove .5s;
+		animation-timing-function: ease;
+		animation-fill-mode: both;
+	}
+	@keyframes mymove {
+    from {top: -40px;}
+    /*to {top: 0px;}*/
 	}
 	.topnav.responsive .icon{
-		/*position: absolute;*/
 		right: 0;
 		top: 0;
 	}
@@ -268,6 +305,11 @@ img {
 		text-align: left;
 		width: 100%;
 		background-color: black;
+		height: 50px;
+		text-align: center;
+	}
+	.topnav.responsive a:hover{
+		background-color: white;
 	}
 	.responsive.icon{
 		width: auto;
@@ -311,6 +353,7 @@ img {
 		position: absolute;
 		top: 50%;
 		transform: translate(-50%, -50%);
+		display: inline-block;
 		
 	}
 /***************************************************
