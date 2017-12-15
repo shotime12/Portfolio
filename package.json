@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "\"# Portfolio\"",
   "main": "server.js",
   "dependencies": {
     "angular": "^1.6.7",
@@ -15,5 +15,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shotime12/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shotime12/Portfolio/issues"
+  },
+  "homepage": "https://github.com/shotime12/Portfolio#readme"
 }
